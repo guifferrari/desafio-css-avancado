@@ -1,0 +1,59 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 400;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    margin-left: 20px;
+}
+
+.menu li a{
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    font-size: 1.5rem;
+}
+
+.menu li a:hover{
+    background-color: #5BC241;
+    color: #ffffff;
+}
+
+.sobre{
+    background-color: #5BC241;
+    width: 55px;
+    height: 40px;
+    align-self: stretch;
+}
+
+.menu li a.btn {
+    background-color: #5BC241;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}

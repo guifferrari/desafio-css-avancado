@@ -1,0 +1,57 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 5px;
+    align-self: flex-end;
+    flex: 2;
+}
+
+.logo img{
+    flex: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.menu li a{
+    margin-left: 15px;
+    padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    background-color: #73410f;
+    color: white;
+}
+
+.menu li a.btn{
+    color: white;
+    background-color: #73410f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 30px;
+}

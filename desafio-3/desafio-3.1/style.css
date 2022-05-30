@@ -1,0 +1,129 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: #f7f7f7;
+    display: grid;
+    max-width: 100vw;
+    grid-template-areas: 
+    "video-destaque propaganda"
+    "video-destaque videos-sugeridos";
+    grid-template-columns: 1fr 402px;
+    grid-template-rows: 56px 1fr;
+    gap: 35px;
+    padding: 35px 100px;
+}
+
+.video-destaque{
+    grid-area: video-destaque;
+    /* background-color: orangered; */
+}
+
+.video-destaque img{
+    width: 727px;
+    height: 409px;
+    margin-bottom: 12px;
+}
+
+.video-destaque .informacoes .titulo{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.video-destaque .informacoes .visualizacoes{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.video-destaque .informacoes p{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.propaganda{
+    grid-area: propaganda;
+}
+
+.propaganda img{
+    width: 402px;
+    max-height: 56px;
+}
+
+.videos-sugeridos{
+    /* background-color: lightskyblue; */
+    grid-area: videos-sugeridos;
+}
+
+.videos-sugeridos .video{
+    display: flex;
+    margin-bottom: 16px;
+    gap: 5px;
+}
+
+.videos-sugeridos .video img{
+    max-width: 186px;
+    max-height: 94px;
+}
+
+.videos-sugeridos .video .titulo{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.videos-sugeridos .video .informacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.videos-sugeridos .video .informacoes p{
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.videos-sugeridos .video .informacoes .outrasinfos{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.pesquisar {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    width: 572px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h2{
+    color:rgb(224, 5, 5);
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.menu li a{
+    margin-left: 30px;
+}
