@@ -1,5 +1,57 @@
 html{
     font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+}
+
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .logo h2{
+    color:#000;
+    font-weight: 700;
+    margin-left: 5px;
+    font-size: 3rem;
+}
+
+.logo {
+    color: var(--cor-padrao);
+    font-size: 3rem;
+}
+
+.icons-header{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icons-header li a{
+    margin-left: 30px;
+    font-size: 2rem;
+    transition: 0.2s ease-in-out;
+}
+
+.icons-header li a:hover{
+    color: var(--cor-padrao);
+}
+
+
+.pesquisar {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    width: 572px;
+    height: 40px;
+    font-size: 16px;
 }
 
 .container{
@@ -17,13 +69,13 @@ html{
 
 .video-destaque{
     grid-area: video-destaque;
-    /* background-color: orangered; */
+    max-width: 830px;
+    min-width: 640px;
 }
 
 .video-destaque img{
-    width: 727px;
-    height: 409px;
     margin-bottom: 12px;
+    width: 100%;
 }
 
 .video-destaque .informacoes .titulo{
@@ -52,7 +104,6 @@ html{
 }
 
 .videos-sugeridos{
-    /* background-color: lightskyblue; */
     grid-area: videos-sugeridos;
 }
 
@@ -88,42 +139,4 @@ html{
     display: flex;
     flex-direction: column;
     margin-top: auto;
-}
-
-.cabecalho{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 20px;
-}
-
-.pesquisar {
-    position: absolute;
-    left: 25%;
-    bottom: 25%;
-    width: 572px;
-    height: 40px;
-    font-size: 16px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.logo h2{
-    color:rgb(224, 5, 5);
-    font-weight: 700;
-    margin-left: 5px;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.menu li a{
-    margin-left: 30px;
 }
