@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="shortcut icon" href="./images/youtube-logo-png-46027-Windows.ico" type="image/x-icon">
+    <link rel="stylesheet" href="variable.css">
+    <link rel="stylesheet" href="menu-hamburguer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,18 +25,50 @@
 <body>
     <header class="cabecalho">
         <a href="#" class="logo">
-            <i class="fa-brands fa-youtube fa-2x"></i>
+            <i class="fa-brands fa-youtube"></i>
             <h2>Youtube</h2>
         </a>
 
         <nav>
-            <input class="pesquisar" type="name" name="pesquisar-video" value="Pesquisar" placeholder="Pesquisar">
+            <div class="checkbox-hamburguer">
+                <input type="checkbox" id="menu-hamburguer">
 
-            <ul class="menu">
-                <li><a href="#"><i class="fa-solid fa-video fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-table-cells fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell fa-lg"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-user fa-lg"></i></a></li>
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+
+                    <ul>
+                        <a href="#"><li>lorem</li></a>
+                        <a href="#"><li>ipsum</li></a>
+                        <a href="#"><li>dolor</li></a>
+                    </ul>
+                </label>
+            </div>
+
+            <input class="pesquisar" type="text" name="pesquisar-query" placeholder="Pesquisar">
+
+            <ul class="icons-header">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-video"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-table-cells"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bell"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -61,12 +95,16 @@
             </div>
 
             <div class="propaganda">
-                <img src="./images/ad.jpg" alt="placeholder para propaganda">
+                <a href="#">
+                 <img src="./images/ad.jpg" alt="placeholder para propaganda">
+                </a>
             </div>
 
             <div class="videos-sugeridos">
                 <div class="video">
-                    <img src="./images/casimiro.webp" alt="placeholder para videos videos sugeridos">
+                    <a href="#">
+                        <img src="./images/casimiro.webp" alt="placeholder para videos videos sugeridos">
+                    </a>
 
                     <div class="informacoes">
                         <h2 class="titulo">CASIMIRO REAGE: FARID ENLOUQUECEU APÓS EMPATE DO GRÊMIO</h2>
@@ -81,7 +119,9 @@
                 </div>
 
                 <div class="video">
-                    <img src="./images/ciro.wepb.webp" alt="placeholder para videos videos sugeridos">
+                    <a href="#">
+                        <img src="./images/ciro.wepb.webp" alt="placeholder para videos videos sugeridos">
+                    </a>
 
                     <div class="informacoes">
                         <h2 class="titulo">CIRO "DEBATE" COM GREGÓRIO DUVIVIER</h2>
@@ -97,7 +137,9 @@
                 </div>
 
                 <div class="video">
-                    <img src="./images/topgun.webp" alt="placeholder para videos videos sugeridos">
+                    <a href="#">
+                        <img src="./images/topgun.webp" alt="placeholder para videos videos sugeridos">
+                    </a>
 
                     <div class="informacoes">
                         <h2 class="titulo">Top Gun: Tudo que você precisa saber"</h2>
@@ -114,7 +156,9 @@
                 </div>
 
                 <div class="video">
-                    <img src="./images/pokemon.webp" alt="placeholder para videos videos sugeridos">
+                    <a href="#">
+                        <img src="./images/pokemon.webp" alt="placeholder para videos videos sugeridos">
+                    </a>
 
                     <div class="informacoes">
                         <h2 class="titulo">Como transferir pokémon no Pokémon Home | Pokémon</h2>
@@ -130,7 +174,9 @@
                 </div>
 
                 <div class="video">
-                    <img src="/images/mix-seis-a-um.jpg" alt="placeholder para videos videos sugeridos">
+                    <a href="#">
+                        <img src="./images/mix-seis-a-um.jpg" alt="placeholder para videos videos sugeridos">
+                    </a>
 
                     <div class="informacoes">
                         <h2 class="titulo">Mix de Seis a Um</h2>

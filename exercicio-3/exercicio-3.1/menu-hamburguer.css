@@ -1,0 +1,69 @@
+.cabecalho .menu {
+    width: 60px;
+    height: 60px;
+    align-self: flex-start;
+}
+
+.cabecalho nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho .hamburguer {
+    background-color: #000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+}
+
+.cabecalho .hamburguer:before,
+.cabecalho .hamburguer:after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cabecalho .hamburguer:before {
+    top: -10px;
+}
+
+.cabecalho .hamburguer:after {
+    bottom: -10px;
+}
+
+.checkbox-hamburguer input{
+    display: none;
+}
+
+.checkbox-hamburguer ul{
+    display: none;
+}
+
+.checkbox-hamburguer input:checked ul {
+    display: block;
+}
+
+.cabecalho .checkbox-hamburguer {
+    position: absolute;
+    top: 8px;
+    right: 200px;
+    z-index: 1;
+}
+
+.cabecalho .checkbox-hamburguer ul {
+    width: 200px;
+    background-color: var(--cor-padrao);
+    padding: 20px;
+}
+
+.cabecalho label ul a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
