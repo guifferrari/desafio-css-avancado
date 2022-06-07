@@ -23,30 +23,31 @@
 </head>
 
 <body>
-    <header class="cabecalho">
+    <header class="header">
+        <div class="checkbox-hamburguer">
+            <input type="checkbox" id="menu-hamburguer">
+
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="pop-up-menu">
+                <a href="#"><li><i class="fa-solid fa-house"></i>Home</li></a>
+                <a href="#"><li><i class="fa-solid fa-compass"></i>Explore</li></a>
+                <a href="#"><li><i class="fa-solid fa-bolt"></i>Shorts</li></a>
+                <a href="#"><li><i class="fa-solid fa-circle-play"></i>Subscriptions</li></a>
+            </ul>
+        </div>
+
         <a href="#" class="logo">
             <i class="fa-brands fa-youtube"></i>
             <h2>Youtube</h2>
         </a>
 
         <nav>
-            <div class="checkbox-hamburguer">
-                <input type="checkbox" id="menu-hamburguer">
-
-                <label for="menu-hamburguer">
-                    <div class="menu">
-                        <span class="hamburguer"></span>
-                    </div>
-
-                    <ul>
-                        <a href="#"><li>lorem</li></a>
-                        <a href="#"><li>ipsum</li></a>
-                        <a href="#"><li>dolor</li></a>
-                    </ul>
-                </label>
-            </div>
-
-            <input class="pesquisar" type="text" name="pesquisar-query" placeholder="Pesquisar">
+            <input class="pesquisar" name="pesquisar-query" placeholder="Pesquisar">
 
             <ul class="icons-header">
                 <li>
