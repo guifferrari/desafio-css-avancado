@@ -3,57 +3,6 @@ html{
     font-size: 62.5%;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 10px 20px 10px 20px;
-}
-
-.header .logo{
-    display: flex;
-    align-items: center;
-    padding-left: 50px;
-}
-
-.header .logo h2{
-    color:#000;
-    font-weight: 700;
-    margin-left: 5px;
-    font-size: 2.5rem;
-}
-
-.logo {
-    color: var(--cor-padrao);
-    font-size: 2.5rem;
-}
-
-.icons-header{
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
-}
-
-.icons-header li a{
-    margin-left: 30px;
-    font-size: 2rem;
-    transition: 0.3s ease-in-out;
-}
-
-.icons-header li a:hover{
-    color: var(--cor-padrao);
-}
-
-.pesquisar {
-    position: absolute;
-    left: 25%;
-    bottom: 10%;
-    width: 572px;
-    height: 40px;
-    font-size: 16px;
-}
-
 .container{
     background-color: #f7f7f7;
     display: grid;
@@ -70,7 +19,6 @@ html{
 .video-destaque{
     grid-area: video-destaque;
     max-width: 830px;
-    min-width: 640px;
 }
 
 .video-destaque img{
