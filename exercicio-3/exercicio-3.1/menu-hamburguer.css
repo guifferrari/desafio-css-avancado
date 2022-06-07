@@ -1,26 +1,25 @@
-.cabecalho .menu {
+.header .menu {
     width: 60px;
     height: 60px;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
-.cabecalho nav label {
+.header label {
     display: flex;
-    flex-direction: column;
 }
 
-.cabecalho .hamburguer {
+.header .hamburguer {
     background-color: #000;
     position: relative;
     display: block;
-    width: 30px;
-    height: 2px;
+    width: 18px;
+    height: 1px;
     top: 29px;
     left: 15px;
 }
 
-.cabecalho .hamburguer:before,
-.cabecalho .hamburguer:after {
+.header .hamburguer:before,
+.header .hamburguer:after {
     background-color: #000;
     content: "";
     display: block;
@@ -29,12 +28,12 @@
     position: absolute;
 }
 
-.cabecalho .hamburguer:before {
-    top: -10px;
+.header .hamburguer:before {
+    top: -7px;
 }
 
-.cabecalho .hamburguer:after {
-    bottom: -10px;
+.header .hamburguer:after {
+    bottom: -7px;
 }
 
 .checkbox-hamburguer input{
@@ -45,25 +44,39 @@
     display: none;
 }
 
-.checkbox-hamburguer input:checked ul {
-    display: block;
+.checkbox-hamburguer input:checked ~ul {
+    display: flex;
+    flex-direction: column;
+    /* gap: 50px; */
 }
 
-.cabecalho .checkbox-hamburguer {
+.header .checkbox-hamburguer {
     position: absolute;
-    top: 8px;
-    right: 200px;
+    left: 10px;
     z-index: 1;
 }
 
-.cabecalho .checkbox-hamburguer ul {
+ .checkbox-hamburguer .pop-up-menu {
     width: 200px;
-    background-color: var(--cor-padrao);
-    padding: 20px;
+    max-height: 300px;
+    position: absolute;
+    background-color: #fff;
 }
 
-.cabecalho label ul a {
-    display: block;
-    text-align: center;
-    padding: 20px;
+.checkbox-hamburguer .pop-up-menu a{
+    padding: 15px;
+    font-size: 2rem;
 }
+
+.checkbox-hamburguer .pop-up-menu a:hover{
+    background-color: #f7f7f7 ;
+}
+
+.checkbox-hamburguer .pop-up-menu li{
+    padding: 3px;
+}
+
+/* .pop-up-menu .fa-solid{
+    margin-right: 20px;
+} */
+
