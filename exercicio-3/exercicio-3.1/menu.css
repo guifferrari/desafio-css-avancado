@@ -10,18 +10,24 @@
     display: flex;
     align-items: center;
     padding-left: 50px;
+    color: var(--cor-padrao);
+    font-size: 2rem;
 }
 
 .header .logo h2{
-    color:#000;
+    color:var(--cor-textos);
     font-weight: 700;
     margin-left: 5px;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
-.logo {
-    color: var(--cor-padrao);
-    font-size: 2.5rem;
+.pesquisar {
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    width: 572px;
+    height: 35px;
+    font-size: 16px;
 }
 
 .icons-header{
@@ -30,23 +36,14 @@
     margin-right: 10px;
 }
 
-.icons-header li a{
+.icons-header a{
     margin-left: 30px;
     font-size: 2rem;
     transition: 0.3s ease-in-out;
 }
 
-.icons-header li a:hover{
+.icons-header i:hover{
     color: var(--cor-padrao);
-}
-
-.pesquisar {
-    position: absolute;
-    left: 25%;
-    bottom: 10%;
-    width: 572px;
-    height: 40px;
-    font-size: 16px;
 }
 
 .header .menu {
@@ -60,7 +57,7 @@
 }
 
 .header .hamburguer {
-    background-color: #000;
+    background-color: var(--cor-hamburguer);
     position: relative;
     display: block;
     width: 18px;
@@ -71,7 +68,7 @@
 
 .header .hamburguer:before,
 .header .hamburguer:after {
-    background-color: #000;
+    background-color: var(--cor-hamburguer);
     content: "";
     display: block;
     width: 100%;
@@ -112,7 +109,7 @@
     width: 200px;
     max-height: 300px;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--cor-background-pop-up-menu);
 }
 
 .checkbox-hamburguer .pop-up-menu a{
@@ -121,7 +118,11 @@
 }
 
 .checkbox-hamburguer .pop-up-menu a:hover{
-    background-color: #f7f7f7;
+    background-color: var(--cor-icons-pop-menu-hover);
+}
+
+.checkbox-hamburguer .pop-up-menu a:hover i{
+    color: var(--cor-padrao);
 }
 
 .checkbox-hamburguer .pop-up-menu li{
@@ -133,6 +134,25 @@
     width: 20px;
 }
 
-/* .pop-up-menu .fa-bolt{
-    width: 20px;
-} */
+@media(max-width: 1024px){
+    .pesquisar{
+        width: 512px;
+    }
+}
+
+@media(max-width: 768px){
+    .pesquisar{
+        width: 330px;
+        left: 30%;
+    }
+
+    .icons-header a{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:425px){
+    .pesquisar{
+        width: 50px;
+ }
+}
